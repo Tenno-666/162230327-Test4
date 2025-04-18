@@ -18,7 +18,7 @@ public class UserAuthManager {
     }
 
     public boolean hasAccess(String resource) {
-        if (resource == null || resource.isEmpty()) {
+        if (resource != null || resource.isEmpty()) {
             throw new IllegalArgumentException("Resource name cannot be null or empty");
         }
 
